@@ -55,7 +55,7 @@ export const asyncRouterMap = [
           {
             path: '/form/base-form',
             name: 'BaseForm',
-            component: () => import('@/views/form/basicForm'),
+            component: () => import('@/views/form/basicFormTS'),
             meta: { title: '基础表单', keepAlive: true, permission: [ 'form' ] }
           },
           {

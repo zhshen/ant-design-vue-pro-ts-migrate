@@ -28,8 +28,7 @@ Vue.use(VueAxios)
 Vue.component('pro-layout', ProLayout)
 Vue.component('page-header-wrapper', PageHeaderWrapper)
 
-window.umi_plugin_ant_themeVar = themePluginConfig.theme
-
+// window.umi_plugin_ant_themeVar = themePluginConfig.theme
 new Vue({
   router,
   store,
