@@ -133,7 +133,7 @@ export default class BaseForm extends Vue {
 
   handleSubmit (e: any) {
       e.preventDefault()
-      debugger
+
       this.form.validateFields((errs, values) => {
         if (errs.length > 0) {
           console.log('Received values of form: ', values)
