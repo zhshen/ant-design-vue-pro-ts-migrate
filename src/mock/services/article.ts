@@ -47,7 +47,7 @@ const article = (options) => {
   const data = []
   for (let i = 0; i < queryParameters.count; i++) {
     const tmpKey = i + 1
-    const num = parseInt(Math.random() * (4 + 1), 10)
+    const num = parseInt((Math.random() * (4 + 1)).toString(), 10)
     data.push({
       id: tmpKey,
       avatar: avatar[num],
@@ -80,7 +80,7 @@ const article = (options) => {
       ],
       activeUser: Math.ceil(Math.random() * 100000) + 100000,
       newUser: Math.ceil(Math.random() * 1000) + 1000,
-      cover: parseInt(i / 4, 10) % 2 === 0 ? covers[i % 4] : covers[3 - (i % 4)]
+      cover: parseInt((i / 4).toString(), 10) % 2 === 0 ? covers[i % 4] : covers[3 - (i % 4)]
     })
   }
   return builder(data)
